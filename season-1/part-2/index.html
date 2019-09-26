@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- 주석 -->
+    <!-- css ( cascading style sheet ) 
+        스타일 시트
+        작성하는 스타일들이 다 다르다.
+    -->
+
+    <!-- <div style="color:red;font-size:20px">텍스트에 색상을 입혀보자</div> -->
+
+    <!-- <div>텍스트에 박스를 만들어보자.</div> -->
+
+    <!-- 스타일 태그 안에는 css 문법만 사용이 가능하다. -->
+    <style>
+        /* css 주석 
+            선택
+        */
+        /* div { 
+            color:blue; font-size:12px;
+            width:200px; height:200px;
+            background-color:red;
+        } */
+    </style>
+
+    <!-- 블럭(block)요소와 인라인(inline)요소 설명 
+    
+        block
+        1. 넓이가 화면의 전체
+        2. 넓이와 높이 변경이 가능하다.
+        3. div, hn(1~6), p, ul, li
+
+        inline
+        1. 넓이가 내용만큼 만 생성된다.
+        2. 넓이와 높이 변경이 안된다.
+        3. a, span
+    
+    -->
+
+    <style>
+        /* div { background-color:red; height:100px; width:100px; }
+        a { background-color:blue; height:100px; } */
+
+        /* div { width:100px; height:100px; background-color:red; 
+            display:inline-block;
+        } */
+    </style>
+
+    <!-- <div>블럭태그</div>
+    <div>블럭태그</div>
+
+    <a>인라인태그</a>
+    <a>인라인태그</a> -->
+
+    <!-- <div>인라인블럭태그</div>
+    <div>인라인블럭태그</div> -->
+
+    <!-- 레이어 박스 모델 
+        1. 넓이
+        2. 높이
+        3. 바깥쪽 여백
+        4. 내부(안쪽) 여백
+        5. 선
+    -->
+    <style>
+        div { 
+            width:100px; height:100px; background-color:yellowgreen;
+
+            /* 바깥쪽 여백 */
+            margin-left:50px;
+            margin-top:50px;
+            margin-right:50px;
+            margin-bottom:50px;
+
+            margin:50px 50px; /* 상하 좌우 */
+            margin:50px 50px 50px; /* 상 좌우 하*/
+            margin:50px 50px 50px 50px; /* 상 우 하 좌 (시계방향) */
+
+            margin:0 auto 0;
+            margin-top:0;
+            margin-bottom:0; 
+            margin-left:auto;
+            margin-right:auto; 
+
+            /* 안쪽여백 */
+            padding-top:50px;
+            padding-left:50px;
+            padding-right:50px;
+            padding-bottom:50px;
+
+            text-align:center;
+
+            border-width:5px;
+            border-style:solid;
+            border-color:pink;
+
+            border:dashed 5px purple;
+            border-bottom-color: blue;
+        }
+    </style>
+
+    <!-- <div>박스모델</div> -->
+
+    <style>
+        p { width:400px; height:100px; background-color:orange; 
+            margin:0 auto;
+            text-align:center;
+        }
+        a { height:50px; background-color:yellow; 
+            width:100px;
+            
+        }
+    </style>
+
+    <p>
+        <a>블럭안에 인라인태그</a>
+        <a>블럭안에 인라인태그</a>
+    </p>
+
+</body>
+</html>

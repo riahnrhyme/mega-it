@@ -1,0 +1,35 @@
+body { 
+    /* background-color:pink;
+    background-color:#222222;
+    background-color:#222;
+    background-color:#fa5;
+    background-color:rgb(255,0,0);
+    background-color:hsl(120,50%,50%);
+    background-color:rgba(255,0,0,1);
+    background-color:hsla(120,50%,50%,1);
+    background-color:transparent; */
+}
+
+/* div.color { 
+    color:#c13333;
+}
+
+p.color {
+    color:#c13333;
+} */
+
+.color {
+    color:#c13333;
+}
+
+.color2 {
+    font-size:30px;
+}
+
+.color.color3 {
+    font-size:50px;
+}
+
+#color4 {
+    color:blue;
+}

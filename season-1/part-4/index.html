@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    
+    <!-- class id 
+        이름을 부여한다.
+        1. 스네이크 표기법 (name_name_)
+        2. 카멜표기법 (nameName)
+        3. name-name-name
+    -->
+
+    <!-- 우선 순위 개념 
+        (더 정확한 선택자를 우선으로 한다.)
+        (순위가 동일한 경우는 맨마지막에 쓴 내용이 적용된다.)
+        
+        5. 에이전트 스타일 시트 ( 브라우저 자체 적용된 스타일 )
+        4. 태그 선택자
+        3. 클래스 선택자
+        2. 아이디 선택자
+        1. inline css (자바스크립트가 적용하는 방식)
+        0. !important
+    -->
+
+    <h1 class="title" id="openTitle" style="color:blueviolet">
+        CSS 우선순위
+    </h1>
+
+    <div class="close close1 close2">css 선택자</div>
+
+    <!-- 상속(inherit) 
+    
+        상속은 모든 속성이 상속되는것은 아니다.
+        나와 가장 가까운 부모의 속성을 적용한다.
+    -->
+    <div class="grand">
+        <div class="parent">
+            <div class="child">상속알아보기</div>
+            <div class="child">상속알아보기</div>
+        </div>
+    </div>
+
+    <!-- 다양한 선택자 -->
+
+    <!-- <div class="number">
+        <p>첫번째 선택자</p>
+        <p class="second">두번째 선택자</p>
+        <p>세번째 선택자</p>
+        <p>네번째 선택자</p>
+        <div>나는 div 첫번째 선택자</div>
+        <div>나는 div 두번째 선택자</div>
+        <p>다섯번째 선택자</p>
+        <p>여섯번째 선택자</p>
+        <p>일곱번째 선택자</p>
+    </div> -->
+
+    <div class="gogo">
+        <h1>
+            <p class="on">선택자 알아보기</p>
+        </h1>
+        <p>선택자 알아보기</p>
+        <div>
+            <p>선택자 알아보기</p>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

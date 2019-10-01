@@ -1,0 +1,45 @@
+h1 { font-size:18px; color:red !important; }
+
+h1.title#openTitle { color:olive; }
+h1#openTitle.title { color:olive; }
+
+h1#openTitle { color:peru; }
+#openTitle { color:yellow; }
+
+h1.title { color:blue; }
+.title { color:pink; color:green !important; }
+/* 위 방법이다 */
+
+html body h1#openTitle.title { color:lightblue; }
+
+.close { color:red; }
+.close.close2 { color:green; }
+.close.close1 { color:blue; }
+
+.grand { color:red !important; width:900px; }
+.parent { color:green; }
+.child { color:blue; }
+
+/* 선택자에서 한칸을 띄어 쓰는건 해당 선택자의 
+모든 자식과 자손을 선택하는거다. */
+.number p { color:red; }
+
+/* .number p:nth-child(3) { color:blue; } */
+/* .number :nth-of-type(2) { color:blue; } */
+/* .number :first-child { color:blue; } */
+/* .number :nth-child(odd) { color:blue; }
+.number :nth-child(even) { color:green; } */
+/* .number :nth-child(n+3) { color:blue;} 3번째 이후 모든 태그 */
+/* .number :nth-child(4n) { color:blue;} */
+/* .number :nth-child(-n+4) { color:blue;} */
+
+/* + 내바로 옆 형제태그 선택 ~ 내 바로 옆 형제 태그 이후 모두 중 선택 */
+/* .number :nth-child(3) + :nth-child(4) { color:blue; } */
+
+/* 자식 선택자 */
+.gogo p { color:orange; }
+/* .gogo > p > p { color:violet; } */
+.gogo > h1 > .on { color:black; }
+.gogo h1 > .on { color:black; }
+.gogo > h1 .on { color:black; }
+.gogo h1 .on { color:black; }

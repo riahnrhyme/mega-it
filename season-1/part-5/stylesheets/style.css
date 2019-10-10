@@ -1,0 +1,94 @@
+.box,.n1,.n2 {
+    width:100px; height:100px; background:blue;
+}
+
+.box2 { background:orange; width:150px; height:150px; }
+
+/* 
+    absolute : 태그대상의 현재공간이 없다. ( 공중에 띄웠다 )
+
+    position을 사용하면 css 사용할수 있는 속성이 있다.
+    top, left, right, bottom
+*/
+
+.box1 { 
+    /*
+    position:relative;
+    top:300px;
+    left:400px; 
+    */
+    /*
+    position:fixed;
+    bottom:0px; right:0px;*/
+}
+
+.n2 { background:orange; }
+
+.nemo { width:400px; height:400px; border:5px solid red;
+    /* position:relative; */
+}
+
+.semo { width:300px; height:300px; border:5px solid green; 
+    position:relative;
+}
+
+.n1 {
+    position:absolute;
+    bottom:0; right:0;
+    z-index:100;
+}
+
+.n2 { 
+    position:absolute;
+    bottom:50px; right:50px;
+    z-index:200;
+}
+
+/* float */
+
+.container {
+    width:299px; border:5px solid red;
+    height:300px;
+}
+
+.open {
+    width:100px; height:100px; background:green; color:#fff;
+}
+
+.open2 { background:blue; }
+.open3 { background:orange; }
+.open4 { background:olive; }
+.open5 { background:yellowgreen; }
+.down { width:600px; height:100px; border:5px solid black; }
+
+/* 적용 
+    float 
+    none
+    left
+    right
+*/
+.open1 { float:left; height:80px; }
+
+.open2 { float:left; height:80px; }
+
+.open3 { float:right; }
+
+.open4 { float:left; height:150px; }
+
+.open5 { float:left; }
+
+/*  실습 */
+
+.exam { width:960px; margin:100px auto 0; 
+    border:3px solid black; height:640px;
+}
+
+/* 작은 사각형은 300*300 크기를 가지고 있다. */
+
+.child { 
+    height:300px; width:300px; margin:10px;
+    background:#ddd; float:left;
+    border-radius:5px;
+}
+
+.child:first-child { height:620px; }

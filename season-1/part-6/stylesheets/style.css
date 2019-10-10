@@ -1,0 +1,91 @@
+.wrap {
+    border:5px solid red;
+}
+
+/* . 현재폴더
+    ..  상위폴더 */
+
+.wrap2 { 
+    border:5px solid blue;
+    background-image:url(../images/img.jpg);
+    height:600px;
+
+    /* 배경과 관련있는 속성들 */
+    background-repeat:no-repeat;
+    background-color:lightblue;
+    /* background-position:bottom right; */
+    /* background-position:center; */
+    /* background-position:50% center; */
+    /* top bottom left right center 
+        background-position: x축 y축
+    */
+    /* background-size:100px 200px; */
+    background-size:cover;
+    background-position:center;
+}
+.menu ul { margin:0; padding:0; }
+.menu li {
+    border:3px solid red;
+    list-style:none;
+
+    background-image:url(../images/coffee.png);
+    background-repeat:no-repeat;
+    width:300px; height:300px;
+}
+
+.menu li:nth-child(2) { 
+    background-position-x:-300px;
+}
+
+.menu li:hover {
+    border-color:green;
+}
+
+.menu li:first-child:hover {
+    background-position:bottom center;
+}
+
+.social { width:416px; margin:80px auto 0; }
+.social ul { margin:0; padding:0; }
+.social li {
+    width:84px; height:84px; background:blue;
+    list-style:none;
+    float:left;
+    margin:10px;
+    background-image:url(../images/icon.png);
+    background-position:bottom left;
+    border-radius:4px;
+}
+
+.social .social2 {
+    background-position-x:-252px;
+}
+
+.social .social3 {
+    background-position-x:-420px;
+}
+
+.social .social4 {
+    background-position-x:-672px;
+}
+
+.social li:hover {
+    background-position-y: center;
+}
+
+/* box sizing 마진 제외
+
+    box 넓이는 
+    200 + 20 + 20 + 10 + 10 = 260px;
+
+    box 넓이는(box-sizing 적용후)
+    200 + 20 + 20 + 10 + 10 = 200px;
+*/
+
+.box {
+    width:200px; height:200px;
+    padding:20px;
+    background-color:yellow;
+    border:10px solid blue;
+    box-sizing:border-box;
+}

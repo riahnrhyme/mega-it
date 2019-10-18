@@ -1,0 +1,49 @@
+/* 가상선택자
+    before, after
+    해당 상대적인 선택자의 내부의 위치
+*/
+
+.list::before { 
+    content:'before 가상선택자';
+    color:blue; width:200px; height:200px;
+    background-color:black;
+    display:block;
+}
+
+.pp::after {
+    content:'before 가상선택자';
+    color:blue; width:200px; height:200px;
+    background-color:black;
+    display:block;
+}
+
+.pp { 
+    color:red; width:200px; height:200px;
+    background-color:gray;
+}
+
+.box1 { border:5px solid red; }
+
+.nemo1 { width:100px; height:100px; background-color:#ffaa50; }
+.nemo2 { width:150px; height:150px; background-color:yellowgreen; }
+.nemo3 { width:200px; height:200px; background-color:blue; }
+
+.box2 { border:5px solid blue; height:100px; }
+
+/* .nemo1 { float:left; margin-bottom:20px; }
+.nemo2 { clear:both; } */
+
+.nemo1, .nemo2, .nemo3 { float:left; }
+
+/* float 해결 방법 
+
+    1. 부모에게 원하는 높이를 준다. (가변)
+    2. 부모도 똑같은 float를 준다. (또다른 문제)
+    3. clear를 시켜준다.
+    4. 3번의 방법을 가상선택자를 활용해서 해결한다.
+*/
+
+.nemo3:hover { height:300px; }
+.clearfix::after { content:''; clear:both; display:block; height:0; }
+/* .box1 { float:left; } */
+

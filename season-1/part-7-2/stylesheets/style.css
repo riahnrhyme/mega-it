@@ -1,0 +1,29 @@
+/* 기존태그의 스타일을 알아야 한다. 
+    초기화
+
+    태그들은 브라우저가 제공해주는 스타일이 있다.
+    이것을 0인 상태로 시작을 한다.
+
+    body, hn, ul, li, p
+*/
+body,ul,li,h1 { margin:0; padding:0; }
+li { list-style:none; }
+a { text-decoration:none; }
+/* * { margin:0; padding:0; } */
+
+.header { height:100px; background-color:#111; }
+.container { width:1200px; margin:0 auto; position:relative; }
+.logo { color:#fff; float:left; 
+    /* line-height:100px;  */
+    position:relative; top:28px;
+    /* padding-top:28px; */
+}
+.menu { 
+    float:right; 
+    /* position:absolute;
+    right:0; */
+}
+/* 인라인인 경우에는 마진과 패딩이 위아래로 적용이 안된다. */
+
+.menu li { float:left; }
+.menu li a { color:#fff; padding:0 10px; line-height:100px; } 

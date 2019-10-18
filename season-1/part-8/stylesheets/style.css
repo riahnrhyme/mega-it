@@ -1,0 +1,52 @@
+/* 초기화 */
+@charset "utf-8";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin:0; padding:0 }
+body, input, textarea, select, button, table { font-size:14px; line-height:1.25em; font-family:'나눔고딕', NanumGothic, Helvetica, AppleGothic, Sans-serif, ngwoff, ngeot, '굴림', gulrem; }
+html, body { height: 100%; padding:0; margin:0; }
+img, fieldset { border:0 }
+ul, ol { list-style:none }
+em, address { font-style:normal }
+a { text-decoration:none }
+a:hover, a:active, a:focus { text-decoration:underline }
+.clearfix::after { content:''; display:block; clear:both; }
+body { font-family: 'Nanum Gothic', sans-serif; }
+
+/* 본문 1200 */
+.container { width:1200px; margin:0 auto; }
+
+.main { background:#f1f1f1; padding:60px 0; }
+.desc { width:500px; float:left; 
+    /* padding-right:20px; box-sizing:border-box; */
+}
+.desc h2 { }
+.desc p { margin:10px 0 15px; line-height:22px; 
+    font-weight:400; color:#666;
+}
+.desc button { background:orange; border:0; 
+    padding:10px 20px; outline:none;
+    border-radius:4px;
+}
+.desc button:active { background:darkorange; }
+.visual { width:680px; height:300px; background:#ddd; float:right; }
+
+.product { padding:60px 0; }
+.title { font-size:22px; font-weight:700; margin-bottom:20px; }
+/* 1200 - 60 = 1140/3 = 380 
+    380 * 3 = 1140 + 30 + 30 + 30 = 1230
+*/
+.list { margin:0 -15px; }
+.list .box { float:left; width:380px;
+    margin:0 15px; }
+/* .list .box:first-child { margin-left:0; }
+.list .box:last-child { margin-right:0; } */
+
+.box .img { width:100%; height:200px; background:#999; margin-bottom:10px; }
+.box h3 { }
+.box h3 i { color:red; }
+.box h3 i:hover { color:blue; font-size:100px; }
+.box p { margin:10px 0 20px; line-height:20px; color:#666; }
+.box button { 
+    background:orange; border:0; 
+    padding:10px 20px; outline:none;
+    border-radius:4px;
+}

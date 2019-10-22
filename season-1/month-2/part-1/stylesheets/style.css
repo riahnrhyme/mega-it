@@ -1,0 +1,108 @@
+.box {
+    width:200px; height:200px; background-color:orange;
+    border-radius:0;
+}
+
+.box:hover {
+    background-color:green;
+    border-radius:50%;
+    /* transition -> 전이 -> 모션(일정시간을 두고 변화하는 위치나 모양) 
+    -> 시간(수학) -> 가속도 -> 딜레이 */
+    /* transition-property:background-color,border-radius; */
+    transition-property:all;
+    /* transition-duration:.5s; */
+    transition-duration:500ms;
+    transition-timing-function:linear; /* default: ease */
+    transition-delay: 1s;
+
+    transition: all 500ms linear 1s;
+    transition: background-color 500ms linear 1s, border-radius 500ms linear 1s;
+
+    transition: all 500ms linear 1s;
+    -webkit-transition: all 500ms linear 1s;
+    -moz-transition: all 500ms linear 1s;
+    -o-transition: all 500ms linear 1s;
+    -ms-transition: all 500ms linear 1s;
+    
+}
+
+/* 
+    마우스가 들어갈때에는 태그가 4초동안 색이 바뀌고 
+    그후 3초가 지나고 2초동안 동그라미가 되고 
+    마우스가 나갈때는 태그가 색이 2초동안 바뀌고 
+    그리고 4초가 지나고 1초에 원래상태가 된다.
+*/
+
+.box1 { 
+    width:200px; height:200px; background-color:orange;
+    border-radius:0;
+
+    transition: background-color 2s, border-radius 1s 6s;
+
+    /* transition:background-color 10s; */
+}
+/* parallax -> 시간차 */
+.box1:hover { 
+    background-color:blue; border-radius:50%;
+
+    /* 마우스가 들어갈때에는 태그가 4초동안 색이 바뀌고 
+    그후 3초가 지나고 2초동안 동그라미가 되고  */
+
+    transition:background-color 4s,border-radius 2s 7s;
+
+    /* transition:background-color 1s; */
+
+
+    /* transition-property:background-color, border-radius;
+    transition-duration:3s, 4s;
+    transition-timing-function: ease, linear;
+    transition-delay: 0s, 2s;
+
+    transition:background-color 3s ease, border-radius 4s linear 2s; */
+}
+
+
+
+
+/* 초기화 */
+* { margin:0; padding:0; }
+a { text-decoration:none; }
+li { list-style:none; }
+
+body {
+    background-image: url(../images/patten.png), url(../images/bg.jpg);
+    background-repeat:repeat,no-repeat;
+    background-size:auto,cover;
+    background-attachment:fixed; /* 고정 */
+}
+/*  100% + 60 */
+nav {
+    width:280px; position:fixed; top:0; left:0;
+    height:calc(100% - 60px); padding:30px;
+}
+
+h1 { 
+    color:#fff; font-size:50px; margin-bottom:50px;
+}
+
+.menu a { 
+    display:block;
+    height:50px; line-height:50px;
+    font-size:30px; color:#fff;
+    text-transform:uppercase;
+    letter-spacing:1px;
+
+    /* 숙제 -> 기능을 연구해 오세요 */
+    font-family: 'Josefin Slab';
+}
+
+
+
+
+
+
+
+
+
+
+

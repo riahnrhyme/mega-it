@@ -1,13 +1,19 @@
 # MEGA IT DEVELOPER PROJECT
 메가 아이티 개발자 프로젝트
 
+## 0 예제 및 숙제 정보
+### 0.1 예제모음
+```
+예제 : https://riahnrhyme.github.io
+각 메뉴 선택
+```
+
 ## 1 기본정보
 ### 1.1 네트워크 공유
 ```
 이메일 문의하기 : riahnrhyme@gmail.com
 카카오 오픈채팅방 : https://open.kakao.com/o/gsMV6KEb
 카페자료 : https://cafe.naver.com/frontdev
-트랜지션 예제 : https://riahnrhyme.github.io
 ```
 ### 1.2 강의 위치
 ```

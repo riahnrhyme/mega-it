@@ -94,15 +94,85 @@ h1 {
 
     /* 숙제 -> 기능을 연구해 오세요 */
     font-family: 'Josefin Slab';
+    text-shadow: 0px 0px 4px #fff;
+    -webkit-text-shadow: 0px 0px 4px #fff;
+    color:transparent;
+    transition: all .2s ease-in-out;
 }
 
+.menu a:hover {
+    color:#fff;
+    text-shadow:none;
+    padding-left:10px;
+}
 
+section { 
+    padding:50px;
+    padding-left:340px;
+    /* padding-left:330px;
+    padding-top:50px;
+    padding-right:50px;
+    padding-bottom:50px; */
+    width:912px;
+    /* height:1216px; */
+}
 
+section::after {
+    content:''; display:block; clear:both;
+}
 
+.list { 
+    width:300px; height:300px; background:#eee; margin:2px;
+    float:left;
+}
 
+.list:first-child { 
+    width:604px; height:604px;
+    overflow:hidden;
+    /* background-image:url(../images/list01.png);
+    background-position:center;
+    background-size:100%;
 
+    transition:all 10s ease; */
+}
 
+/* 다른방법 */
+.list:first-child:hover {
+    /* background-size:120%;
+    background-position:center; */
+}
 
+.list:first-child img {
+    opacity: .6;
 
+    transition:all 200ms ease-in-out;
+}
 
+.list:first-child:hover img {
+    opacity: 1;
 
+    transform:scale(1.2);
+}
+
+.list:nth-child(2) {
+
+    line-height:300px;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+}
+
+.list:nth-child(2) span {
+    
+    position:absolute;
+    top:-20%; left:50%;
+    line-height:30px;
+    width:80px;
+    margin-left:-40px;
+
+    transition:all .4s ease;
+}
+
+.list:nth-child(2):hover span {
+    top:30%;
+}

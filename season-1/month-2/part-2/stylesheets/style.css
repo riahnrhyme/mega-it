@@ -1,0 +1,40 @@
+.box {
+    width:200px; height:200px; background-color:red;
+
+    /* transform -> 변형 -> 2D -> 3D */
+    /* transform-origin: top left; */
+
+    /* transform:translate(50%,0);
+    transform:translateX(50%);
+    transform:rotate(45deg);
+    transform:scale(1);
+    transform:rotate(45deg) translateX(200px) ; */
+
+    /* animation 
+        프레임(frame)
+    */
+    
+    animation-name: ani2;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 3; /*infinite*/
+    /* animation-delay: 2s; */
+    /* animation-direction: alternate-reverse; */
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+    
+    animation: ani2 4s linear 0s infinite alternate;
+}
+
+@keyframes ani {
+    from { transform:translateX(0px) }
+    to { transform:translateX(100px) }
+}
+
+@keyframes ani2 {
+    0% { transform:translate(0px,0px) }
+    25% { transform:translate(100px,0px) }
+    50% { transform:translate(100px,100px) }
+    75% { transform:translate(0px,100px) }
+    100% { transform:translate(0px,0px) }
+}

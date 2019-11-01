@@ -1,0 +1,46 @@
+body,ul,li,h1,h2 { margin:0; padding:0; }
+img { border:0; }
+li { list-style:none; }
+
+h1 { text-align:center; margin:50px 0 40px; }
+.cake { width:920px; margin:0 auto; }
+.cake li { width:200px; height:200px; float:left; 
+    border-radius:50%; overflow:hidden; margin:15px; }
+.cake li img { width:100%; }
+
+/* 애니메이션 실습 */
+h1 { 
+    animation: move 2s;
+}
+
+@keyframes move {
+    from { transform: translateY(-100px); }
+    70% { transform: translateY(50px); }
+    to { transform: translateY(0); }
+}
+
+.cake li { 
+    animation: cake 2s;
+}
+
+@keyframes cake { 
+    0% { transform: scale(0); opacity: 0; }
+    20% { transform: scale(0.6); }
+    40% { transform: scale(0.2); }
+    60% { transform: scale(0.8); }
+    80% { transform: scale(0.4) rotate(0deg); }
+    100% { transform: scale(1) rotate(360deg); opacity: 1; }
+}
+
+.nemo { width:100px; height:100px; background-color:red;
+border-radius:50%; margin:20px; opacity:0; }
+
+.nemo1 { animation:nemo 3s forwards; }
+.nemo2 { animation:nemo 3s 1s forwards; }
+.nemo3 { animation:nemo 3s 2s forwards; }
+
+@keyframes nemo {
+    0% { opacity:0; }
+    40% { opacity:1; transform: translateX(0); }
+    100% { opacity:1; transform: translateX(200px); }
+}

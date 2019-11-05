@@ -1,0 +1,77 @@
+* { margin:0; padding:0; }
+a { text-decoration:none; }
+li { list-style:none; }
+
+
+
+/* @media screen and ( orientation: portrait ) { /* 세로모드 
+    header { background-color:blue; }
+}
+
+@media screen and ( orientation: landscape ) { /* 가로모드 
+    header { background-color:green; }
+} */
+
+/* @media screen and ( max-width:1024px ) {
+    header { background-color:orange; }
+} */
+
+/* 반응형을 만들때는
+    모바일 퍼스트(first)
+    = 모바일 먼저 스타일을 작성한다.
+*/
+
+.container { max-width:960px; margin:20px auto 0; border:1px solid #eee; }
+
+header { height:200px; background-color:orangered;
+    background-image:url(../images/bg.png);
+    background-position:center;
+    background-size:cover;
+
+    background:url(../images/bg.png) center cover orangered;
+    padding:20px;
+    box-sizing:border-box;
+
+    background-attachment: fixed;
+}
+
+h1 { color:#fff; }
+
+nav { background-color:#c13333; color:#fff; }
+.menu::after { clear:both; display:block; content:''; }
+.menu li { float:left; }
+.menu li a { color:inherit; padding:10px 20px; display:block; }
+/* 모바일로 버튼을 구현할때는 최소 44*44 이상으로 만드는게 좋다. */
+
+section { width:660px; float:left; padding:20px; }
+h2 { }
+h3 { margin:20px 0 30px; font-size:16px; }
+p { font-size:12px; line-height:22px; } /* 폰트는 10px 이하로 설정이 안된다. -> 브라우저마다 다르다 */
+
+aside { width:260px; float:left; background-color:#eee; }
+img { width:100%; }
+
+footer { clear:both; height:60px; background:#222; }
+
+@media screen and ( max-width:1020px ) {
+
+    .container { max-width:768px; }
+
+    header { height:150px; background-color:blue; }
+    section { width:calc(100% - 40px); }
+    aside { width:100%; }
+    img { width:33.33%; float:left; }
+    /* img -> display:inline-block 좌우에 여백이 생긴다. 코드가 띄어쓰기가 존재하기 때문이다. */
+
+}
+
+@media screen and ( max-width:828px ) {
+    
+    .container { max-width:480px; }
+
+    header { height:100px; background-color:green; }
+    h1 { font-size:20px; }
+
+    .menu li { float:none; text-align:center; }
+    img { width:100%; }
+}

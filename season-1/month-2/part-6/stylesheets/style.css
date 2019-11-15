@@ -1,0 +1,71 @@
+* { margin:0; padding:0; }
+
+.container { max-width:1000px; margin:0 auto; border: 5px solid red; }
+.container::after { content:''; display:block; clear:both; }
+.row { margin:0 -10px; }
+.nemo { height:150px; float:left; 
+    width:25%;
+}
+
+.inner { 
+    margin:0px 10px;
+    height:100%; background-color:orange;
+}
+
+@media screen and (max-width:768px) {
+    .nemo { width:50%; }
+}
+
+@media screen and (max-width:580px) {
+    .nemo { width:100%; }
+}
+
+/* 반응형 예제 */
+
+body { background-color:#2f2f36; }
+.wrapper { margin:60px auto; padding:0 50px; }
+.grid { background-color:#fff; padding:5px; }
+.grid::after { content:''; display:block; clear:both; }
+.box { float:left; }
+.in { height:150px; margin:5px; }
+
+.b01 { width:80%; }
+.b02 { width:20%; }
+.b03 { width:40%; }
+.b04 { width:20%; }
+.b05 { width:30%; }
+.b06 { width:10%; }
+.b07 { width:25%; }
+.b08 { width:25%; }
+.b09 { width:25%; }
+.b10 { width:25%; }
+
+.b01 .in { background-color:peru; }
+.b02 .in { background-color:olivedrab; }
+.b03 .in { background-color:orangered; }
+.b04 .in { background-color:orchid; }
+.b05 .in { background-color:crimson; }
+.b06 .in { background-color:coral; }
+.b07 .in { background-color:blue; }
+.b08 .in { background-color:sandybrown; }
+.b09 .in { background-color:navajowhite; }
+.b10 .in { background-color:lime; }
+
+@media screen and ( min-width:1200px ) {
+    .wrapper { max-width:1200px; }
+}
+
+@media screen and ( max-width:1024px ) {
+    .box { width:33.33%; }
+    .b01 { width:100%; }
+}
+
+@media screen and ( max-width:768px ) {
+    .wrapper { padding:0; margin:0; }
+    .box { width:50%; }
+    .b01,.b10 { width:100%; }
+}
+
+@media screen and ( max-width:480px ) {
+    .box { width:100%; }
+}

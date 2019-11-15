@@ -1,0 +1,147 @@
+@charset "UTF-8";
+// 한글사용시 케릭터셋을 설정하지 않으면 에러가 난다.
+// 주석처리가 가능하다. css 파일 컴파일 후에는 표시 되지 않는다.
+/* 블럭 주석처리가 가능하다. CSS 와 동일 */
+// 변수 (변하는 수)
+// 연산 + - * /
+// 지역 과 전역
+// 지역은 해당 선택자 혹은 스코프안에서 만 적용
+// 전역 전체적을 사용할수 있다.
+
+$number: 100%;
+$bg-color: blue;
+
+.box {
+    $number2: 200px !global;
+
+    width:$number2; 
+    height:$number/2; background-color:$bg-color;
+}
+
+.box1 { 
+    width:$number2+100;
+    height:$number*2; background-color:$bg-color; }
+
+
+.menu {
+    background-color:yellowgreen;
+    .list {
+        text-align:center;
+        margin: {
+            top:0px; left:0px; right:0px; bottom:0px;
+        }
+        padding:0;
+        li {
+            list-style:none;
+            float:left;
+            a {
+                text-decoration:none;
+                color:#fff;
+                padding:10px 20px;
+                display:block;
+                font: {
+                    size:12px;
+                    weight:bold;
+                }
+                &:hover { color:red; }
+            }
+        }
+        &::after { content:''; display:block; clear:both; }
+    }
+}
+
+// .menu .list .sub {
+//     position:absolute;
+//     background-color:blue;
+//     margin:0; padding:0;
+//     width:120px;
+//     display:none;
+//     li {
+//         float:none;
+//     }
+// }
+
+// .menu .list li:hover .sub { display:block; }
+
+.menu .list .sub {
+        position:absolute;
+        background-color:blue;
+        margin:0; padding:0;
+        width:120px;
+        visibility: hidden;
+        opacity:0;
+        transition:all .2s ease;
+        transform:translateY(20px);
+        li {
+            float:none;
+        }
+    }
+    
+    .menu .list li:hover .sub { 
+        visibility: visible; 
+        opacity:1;
+        transform:translateY(0px)
+    }
+
+@import "variable.scss";
+
+// 논리 연산 -> 논리적인 결과 만드는 방법
+
+$max : 20px;
+
+/*.nemo {
+    width:100px; height:100px;
+    @if ($max > 100) {
+        background-color:$bg-green;
+    }
+    @if ($max < 30) {
+        background-color:$bg-red;
+    }
+}*/
+
+// 상속 -> placeholder
+%circle {
+    width:200px; height:200px;
+    background-color:green;
+}
+
+.nemo {
+    @extend %circle;
+}
+
+.nemo2 {
+    /*width:200px; height:200px;
+    background-color:green;*/
+    //@extend .nemo;
+    @extend %circle;
+    border-radius:50%;
+}
+
+// Mixin vs Function
+// 공통적인 재활용이 가능하다.
+// 개발의 가장 첫번째는 재활용이다.
+@mixin fontMix ($color,$size) {
+    color: $color;
+    font-size: $size;
+}
+
+.open {
+    //color:red; font-size:20px;
+    @include fontMix(red,20px);
+}
+
+.close {
+    //color:blue; font-size:40px;
+    @include fontMix(blue,40px);
+}
+
+// function 리턴이 있다.
+@function fontFunc($width){
+    @return $width + 200px;
+}
+
+.open {
+    width:fontFunc(500px);
+    height:200px; 
+    background-color:gray;
+}

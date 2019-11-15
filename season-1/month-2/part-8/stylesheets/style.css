@@ -1,0 +1,8 @@
+.box { height:200px; background-color:orange; 
+border:2px solid red; }
+.box1 { height:200px; background-color:yellowgreen; 
+border:2px solid blue; }
+
+h2 { background-color:#ccc; }
+
+body { padding-top:60px; }

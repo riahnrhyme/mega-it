@@ -1,0 +1,51 @@
+* { margin:0; padding:0; }
+li { list-style:none; }
+
+#slider { width:800px; height:450px; margin:50px auto 10px; 
+ border:5px solid #000; }
+#item { width:4000px; }
+#item li { width:800px; height:450px; float:left; line-height:450px;
+color:#fff; font-size:100px; font-family: Impact; opacity: .6; 
+text-align:center; }  
+
+#item li:nth-child(1) { background-color:darkorange; }
+#item li:nth-child(2) { background-color:cornflowerblue; }
+#item li:nth-child(3) { background-color:darkorchid; }
+#item li:nth-child(4) { background-color:firebrick; }
+#item li:nth-child(5) { background-color:darkseagreen; }
+
+/* css 애니메이션을 활용한 슬라이드 기능 만들기 
+
+    활동패턴
+
+    1번배너(3초) -> 이동(1초) -> 2번배너(3초) -> 이동(1초) -> 3번배너(3초) 
+    -> 이동(1초) -> 4번배너(3초) -> 이동(1초) -> 5번배너(3초) -> 맨앞으로(1초)
+
+    배너의 사이클
+    3 + 1 + 3 + 1 + 3 + 1 + 3 + 1 + 3 + 1 = 20초
+*/
+
+/* #item { animation: move 20s linear infinite }
+
+@keyframes move {
+    0% { transform: translateX(0); }
+    17% { transform: translateX(0); }
+    20% { transform: translateX(-700px); }
+    37% { transform: translateX(-700px); }
+    40% { transform: translateX(-1400px); }
+    57% { transform: translateX(-1400px); }
+    60% { transform: translateX(-2100px); }
+    77% { transform: translateX(-2100px); }
+    80% { transform: translateX(-2800px); }
+    97% { transform: translateX(-2800px); }
+    100% { transform: translateX(0px); }
+} */
+
+#page { text-align:center; margin-bottom:20px; }
+#page div { display:inline-block; width:14px; height:14px; 
+    border-radius:50%; background-color:#ddd; }
+
+#page div.active { background-color:yellowgreen; }
+
+#btn { text-align:center; }
+#btn button { padding:10px 20px; }

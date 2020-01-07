@@ -1,0 +1,10 @@
+.item { padding:10px 20px; background-color:#ddd; }
+.inner { width:20px; height:20px; border-radius:50px; 
+    display:inline-block; cursor:pointer; 
+    background-color:red; color:#fff; margin-left:10px; }
+
+.item.active { color:#777; text-decoration:line-through; }
+
+#box { width:100px; height:100px; background-color:orangered; 
+    margin-top:10px;
+}

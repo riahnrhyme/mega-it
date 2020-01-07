@@ -1,0 +1,4 @@
+.box { width:200px; height:200px; background-color:red; margin:5px; }
+.box.green { background-color:green; }
+
+.inner { width:100px; height:100px; background-color:green; }

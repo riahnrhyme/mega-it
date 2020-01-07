@@ -1,0 +1,4 @@
+.nemo { width:100px; height:100px; background-color:orangered; 
+    margin:5px }
+
+.nemo.green { background-color:green; }

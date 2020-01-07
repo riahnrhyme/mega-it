@@ -1,0 +1,12 @@
+.box { height:260px; text-align:center; line-height:260px; font-size:80px; color:transparent; }
+
+.box1 { background-color:royalblue; }
+.box2 { background-color:crimson; }
+.box3 { background-color:yellowgreen; }
+.box4 { background-color:teal; }
+
+.wrapper { width:1000px; margin:80px auto 0; }
+
+.bx-wrapper { border:0; box-shadow:none; }
+.button, .move { text-align:center; margin-bottom:15px; }
+button { padding:10px 20px; }
